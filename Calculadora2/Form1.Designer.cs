@@ -41,15 +41,17 @@
             this.rdCalculadora = new System.Windows.Forms.RadioButton();
             this.rdRegrade3 = new System.Windows.Forms.RadioButton();
             this.gbRegrade3 = new System.Windows.Forms.GroupBox();
-            this.txtRegra1 = new System.Windows.Forms.TextBox();
-            this.txtRegra2 = new System.Windows.Forms.TextBox();
-            this.txtRegra3 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtRegra3 = new System.Windows.Forms.TextBox();
+            this.txtRegra2 = new System.Windows.Forms.TextBox();
+            this.txtRegra1 = new System.Windows.Forms.TextBox();
             this.lblResultado = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gbCalculadora.SuspendLayout();
             this.gbRegrade3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNum1
@@ -89,7 +91,7 @@
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalcular.Location = new System.Drawing.Point(138, 338);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(254, 60);
@@ -213,25 +215,34 @@
             this.gbRegrade3.Text = "Regra de 3";
             this.gbRegrade3.Visible = false;
             // 
-            // txtRegra1
+            // label4
             // 
-            this.txtRegra1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRegra1.Location = new System.Drawing.Point(7, 49);
-            this.txtRegra1.Multiline = true;
-            this.txtRegra1.Name = "txtRegra1";
-            this.txtRegra1.Size = new System.Drawing.Size(86, 32);
-            this.txtRegra1.TabIndex = 0;
-            this.txtRegra1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(161, 101);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 55);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "X";
             // 
-            // txtRegra2
+            // label3
             // 
-            this.txtRegra2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRegra2.Location = new System.Drawing.Point(143, 48);
-            this.txtRegra2.Multiline = true;
-            this.txtRegra2.Name = "txtRegra2";
-            this.txtRegra2.Size = new System.Drawing.Size(86, 32);
-            this.txtRegra2.TabIndex = 1;
-            this.txtRegra2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(99, 117);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(43, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "______";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(99, 52);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(43, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "______";
             // 
             // txtRegra3
             // 
@@ -243,34 +254,25 @@
             this.txtRegra3.TabIndex = 2;
             this.txtRegra3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label2
+            // txtRegra2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(99, 52);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "______";
+            this.txtRegra2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRegra2.Location = new System.Drawing.Point(143, 48);
+            this.txtRegra2.Multiline = true;
+            this.txtRegra2.Name = "txtRegra2";
+            this.txtRegra2.Size = new System.Drawing.Size(86, 32);
+            this.txtRegra2.TabIndex = 1;
+            this.txtRegra2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label3
+            // txtRegra1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(99, 117);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "______";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(161, 101);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 55);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "X";
+            this.txtRegra1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRegra1.Location = new System.Drawing.Point(7, 49);
+            this.txtRegra1.Multiline = true;
+            this.txtRegra1.Name = "txtRegra1";
+            this.txtRegra1.Size = new System.Drawing.Size(86, 32);
+            this.txtRegra1.TabIndex = 0;
+            this.txtRegra1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblResultado
             // 
@@ -283,12 +285,24 @@
             this.lblResultado.TabIndex = 11;
             this.lblResultado.Text = "X";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(503, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 23);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.ClientSize = new System.Drawing.Size(538, 474);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.gbRegrade3);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.rdRegrade3);
@@ -304,6 +318,7 @@
             this.gbCalculadora.PerformLayout();
             this.gbRegrade3.ResumeLayout(false);
             this.gbRegrade3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -330,6 +345,7 @@
         private System.Windows.Forms.TextBox txtRegra2;
         private System.Windows.Forms.TextBox txtRegra1;
         private System.Windows.Forms.Label lblResultado;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
